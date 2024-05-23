@@ -6,7 +6,7 @@ $udpClient = New-Object System.Net.Sockets.UdpClient
 $remoteEndPoint = New-Object System.Net.IPEndPoint([System.Net.IPAddress]::Parse("127.0.0.1"), 8080)
 
 # Nesta linha, uma mensagem é convertida em um array de bytes usando a codificação ASCII. A mensagem é simplesmente definida como 'hi'
-$message = [System.Text.Encoding]::ASCII.GetBytes('Somos felizes')
+$message = [System.Text.Encoding]::ASCII.GetBytes('Somos tristes')
 
 # Aqui, o método Send() do objeto UdpClient é chamado para enviar a mensagem para o ponto final remoto definido anteriormente.
 # Ele recebe como argumentos o array de bytes da mensagem, o comprimento da mensagem e o ponto final remoto.
